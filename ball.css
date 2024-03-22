@@ -1,0 +1,42 @@
+
+#board{
+    width: 500px;
+    height: 500px;
+    border: solid 2px black;
+    position: relative;
+    /* top: 10%;
+    left: 30%; */
+}
+#ball{
+    /* margin: 50px; */
+    width: 15px;
+    height: 15px;
+    background: #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the ball precisely */
+
+}
+#paddle {
+    background-color: #0000ff;
+    width: 80px;
+    height: 10px;
+    position: absolute;
+    bottom: 10px; /* Distance from the bottom of the board */
+    left: 50%; /* Initial position of the paddle (centered horizontally) */
+    transform: translateX(-50%); /* Center the paddle precisely */
+}
+
+#game-message {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
